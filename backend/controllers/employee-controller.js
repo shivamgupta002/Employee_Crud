@@ -15,7 +15,7 @@ const getAllEmployees = async (req, res, next) => {
   return res.status(200).json({ employees });
 };
 
-//Search  Book
+//Search  Employee
 const getById = async (req, res, next) => {
   const id = req.params.id;
   let employee;

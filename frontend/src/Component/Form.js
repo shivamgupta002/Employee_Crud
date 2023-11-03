@@ -34,9 +34,9 @@ const New = () => {
     );
     const checkedValues = checkedDepartments?.map((item) => item.value);
     const checkedValuesString = checkedValues.join(", ");
-    
+
     setDepartment(updatedDepartment);
-  
+
     setNewDepartment(checkedValuesString);
   };
 
@@ -168,7 +168,7 @@ const New = () => {
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   placeholder="Phone number"
                   onChange={(e) => setPhone(e.target.value)}
-                  required 
+                  required
                 />
               </div>
             </div>
@@ -244,7 +244,6 @@ const New = () => {
                     onChange={handleCheckboxChange}
                     id={department.value}
                     className="me-2"
-                  
                   />
                   <label htmlFor={department.value}>{department.value}</label>
                 </div>
